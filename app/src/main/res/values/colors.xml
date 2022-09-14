@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="pg_darkblue_200">#4E687B</color>
+    <color name="pg_darkblue_500">#233E4F</color>
+    <color name="pg_darkblue_700">#001827</color>
+    <color name="pg_ligtgreen_200">#9EFF5E</color>
+    <color name="pg_ligtgreen_500">#66E323</color>
+    <color name="pg_ligtgreen_700">#21B000</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
