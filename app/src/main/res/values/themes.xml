@@ -6,9 +6,9 @@
         <item name="colorPrimaryVariant">@color/pg_darkblue_700</item>
         <item name="colorOnPrimary">@color/pg_darkblue_200</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/pg_ligtgreen_500</item>
+        <item name="colorSecondary">@color/pg_lightgreen_500</item>
         <item name="colorSecondaryVariant">@color/pg_darkblue_700</item>
-        <item name="colorOnSecondary">@color/pg_ligtgreen_200</item>
+        <item name="colorOnSecondary">@color/pg_lightgreen_200</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->

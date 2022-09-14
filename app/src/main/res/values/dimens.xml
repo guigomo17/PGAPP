@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="wdButton">80dp</dimen>
+    <dimen name="hgButton">80dp</dimen>
+    <dimen name="szTitle">30sp</dimen>
+    <dimen name="szNormal">15sp</dimen>
+</resources>

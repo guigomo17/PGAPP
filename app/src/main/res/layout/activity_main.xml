@@ -10,12 +10,101 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:gravity="center"
-        android:text="PARTNERS APP" />
+        android:text="@string/bsName"
+        android:textSize="@dimen/szTitle"
+        android:textStyle="bold"
+        android:textColor="@color/pg_lightgreen_500"
+        android:layout_margin="10dp"/>
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/vpMenuCarrusel"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="170dp"
         android:paddingStart="80dp"
         android:paddingEnd="80dp"
-        android:layout_below="@id/tvMenuTitle"/>
+        android:layout_below="@id/tvMenuTitle"
+        android:layout_margin="10dp"/>
+    <RelativeLayout
+        android:id="@+id/rlMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/vpMenuCarrusel"
+        android:layout_margin="10dp">
+        <ImageView
+            android:id="@+id/ivMenuCatalog"
+            android:layout_width="@dimen/wdButton"
+            android:layout_height="@dimen/hgButton"
+            android:src="@drawable/iconocatalogo"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="75dp"
+            android:layout_marginVertical="55dp"/>
+        <TextView
+            android:id="@+id/tvMenuCatalog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CATÁLOGO"
+            android:textSize="@dimen/szNormal"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_marginHorizontal="77dp"
+            android:layout_marginVertical="241dp"/>
+        <ImageView
+            android:id="@+id/ivMenuOrder"
+            android:layout_width="@dimen/wdButton"
+            android:layout_height="@dimen/hgButton"
+            android:src="@drawable/iconopedido"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginHorizontal="75dp"
+            android:layout_marginVertical="55dp"/>
+        <TextView
+            android:id="@+id/tvMenuOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ORDENES"
+            android:textSize="@dimen/szNormal"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginHorizontal="80dp"
+            android:layout_marginVertical="241dp"/>
+
+        <ImageView
+            android:id="@+id/ivMenuViewer"
+            android:layout_width="@dimen/wdButton"
+            android:layout_height="@dimen/hgButton"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="75dp"
+            android:layout_marginVertical="190dp"
+            android:src="@drawable/iconovisor" />
+        <TextView
+            android:id="@+id/tvMenuViewer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INFORMES"
+            android:textSize="@dimen/szNormal"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="77dp"
+            android:layout_marginVertical="165dp"/>
+        <ImageView
+            android:id="@+id/ivMenuPay"
+            android:layout_width="@dimen/wdButton"
+            android:layout_height="@dimen/hgButton"
+            android:src="@drawable/iconopago"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginHorizontal="75dp"
+            android:layout_marginVertical="190dp"/>
+        <TextView
+            android:id="@+id/tvMenuPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PAGOS"
+            android:textSize="@dimen/szNormal"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginHorizontal="91dp"
+            android:layout_marginVertical="165dp"/>
+    </RelativeLayout>
 </RelativeLayout>
