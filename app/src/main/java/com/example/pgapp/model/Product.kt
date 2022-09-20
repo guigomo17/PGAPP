@@ -1,4 +1,4 @@
-package com.example.pgapp
+package com.example.pgapp.model
 
 import java.io.Serializable
 

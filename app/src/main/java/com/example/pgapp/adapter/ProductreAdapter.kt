@@ -1,10 +1,11 @@
-package com.example.pgapp
+package com.example.pgapp.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.pgapp.databinding.ProductContainerBinding
+import com.example.pgapp.model.product
 
 class productreAdapter(val context: Context, private val items: ArrayList<product>)
     : RecyclerView.Adapter<productreAdapter.ViewHolder> () {

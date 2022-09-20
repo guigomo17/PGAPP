@@ -4,15 +4,16 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.MarginPageTransformer
 import androidx.viewpager2.widget.ViewPager2
+import com.example.pgapp.adapter.imagereAdapter
+import com.example.pgapp.adapter.productreAdapter
 import com.example.pgapp.databinding.ActivityMainBinding
 import com.example.pgapp.databinding.CatalogContainerBinding
-import com.example.pgapp.databinding.ProductContainerBinding
+import com.example.pgapp.model.product
 import kotlin.math.abs
 
 class MainActivity : AppCompatActivity() {

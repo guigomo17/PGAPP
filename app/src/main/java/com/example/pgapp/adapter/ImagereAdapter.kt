@@ -1,10 +1,11 @@
-package com.example.pgapp
+package com.example.pgapp.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
+import com.example.pgapp.R
 import com.example.pgapp.databinding.ImageContainerBinding
 
 class imagereAdapter(val imageList: ArrayList<Int>, private val viewPager2: ViewPager2)
