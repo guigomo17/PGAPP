@@ -1,21 +1,21 @@
 package com.example.pgapp
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
+import com.example.pgapp.databinding.ImageContainerBinding
 
-class imagereAdapter(private val imageList: ArrayList<Int>, private val viewPager2: ViewPager2)
+class imagereAdapter(val imageList: ArrayList<Int>, private val viewPager2: ViewPager2)
     : RecyclerView.Adapter<imagereAdapter.ImageViewHolder> () {
-    class ImageViewHolder(itemView:View) : RecyclerView.ViewHolder(itemView) {
+    inner class ImageViewHolder(val binding: ImageContainerBinding) : RecyclerView.ViewHolder(binding.root) {
         val imageView : ImageView = itemView.findViewById(R.id.ivContainerCard);
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ImageViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.image_container, parent, false)
-        return ImageViewHolder(view)
+        val binding = ImageContainerBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        return ImageViewHolder(binding)
     }
 
     override fun onBindViewHolder(holder: ImageViewHolder, position: Int) {
