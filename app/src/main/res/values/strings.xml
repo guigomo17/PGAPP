@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">PGAPP</string>
     <string name="bsName">NEW CHEM</string>
+    <string name="ik1_name">Producto 1</string>
+    <string name="ik2_name">Producto 2</string>
+    <string name="ik3_name">Producto 3</string>
+    <string name="hola_amigo">Hola Amigo (~^_^)~</string>
+    <string name="nombre">Nombre</string>
 </resources>

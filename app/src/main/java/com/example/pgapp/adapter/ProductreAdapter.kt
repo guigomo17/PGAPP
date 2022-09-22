@@ -1,14 +1,13 @@
 package com.example.pgapp.adapter
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.pgapp.databinding.ProductContainerBinding
-import com.example.pgapp.model.product
+import com.example.pgapp.model.Product
 
-class productreAdapter(val context: Context, private val items: ArrayList<product>)
-    : RecyclerView.Adapter<productreAdapter.ViewHolder> () {
+class ProductreAdapter(private val items: ArrayList<Product>)
+    : RecyclerView.Adapter<ProductreAdapter.ViewHolder> () {
         inner class ViewHolder(val binding: ProductContainerBinding) : RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {

@@ -11,5 +11,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="fitXY"
-        android:src="@drawable/descuentoproductos"/>
+        android:src="@drawable/descuentoproductos"
+        android:contentDescription="@string/hola_amigo" />
 </androidx.cardview.widget.CardView>

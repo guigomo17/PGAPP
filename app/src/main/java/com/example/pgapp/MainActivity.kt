@@ -1,31 +1,27 @@
 package com.example.pgapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.MarginPageTransformer
 import androidx.viewpager2.widget.ViewPager2
-import com.example.pgapp.adapter.imagereAdapter
-import com.example.pgapp.adapter.productreAdapter
+import com.example.pgapp.adapter.ImagereAdapter
 import com.example.pgapp.databinding.ActivityMainBinding
 import com.example.pgapp.databinding.CatalogContainerBinding
-import com.example.pgapp.model.product
+import com.example.pgapp.ui.CatalogActivity
 import kotlin.math.abs
 
 class MainActivity : AppCompatActivity() {
-    lateinit var viewPager2: ViewPager2
-    lateinit var handler: Handler
-    lateinit var imageList: ArrayList<Int>
-    lateinit var adapterImage: imagereAdapter
-    lateinit var productList: ArrayList<product>
+    private lateinit var viewPager2: ViewPager2
+    private lateinit var handler: Handler
+    private lateinit var imageList: ArrayList<Int>
+    private lateinit var adapterImage: ImagereAdapter
     private lateinit var binding: ActivityMainBinding
     private lateinit var binding2: CatalogContainerBinding
-    lateinit var adapterProduct: productreAdapter
-    lateinit var layoutManager: RecyclerView.LayoutManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,28 +38,7 @@ class MainActivity : AppCompatActivity() {
             }
         })
         binding.ivMenuCatalog.setOnClickListener {
-            setContentView(binding2.root)
-            layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-            binding2.rvContenido.layoutManager = layoutManager
-            fillProduct()
-            adapterProduct = productreAdapter(this, productList)
-          //  binding2.rvContenido.adapter = productreAdapter
-        }
-    }
-
-    fun showActivity() {
-
-    }
-
-    fun fillProduct() {
-        productList = ArrayList()
-        val arrayProductNames = resources.getStringArray(R.array.productname)
-        val arrayImageNames = resources.obtainTypedArray(R.array.imagename)
-        for(i in arrayProductNames.indices) {
-            val products = product()
-            products.name = arrayProductNames[i]
-            products.image = arrayImageNames.getResourceId(i, -1)
-            productList.add(products)
+            startActivity(Intent(this, CatalogActivity::class.java))
         }
     }
 
@@ -101,7 +76,7 @@ class MainActivity : AppCompatActivity() {
         imageList.add(R.drawable.beneficioskadabra)
         imageList.add(R.drawable.beneficiosviovan)
 
-        adapterImage = imagereAdapter(imageList, viewPager2)
+        adapterImage =ImagereAdapter(imageList, viewPager2)
 
         viewPager2.adapter = adapterImage
         viewPager2.offscreenPageLimit = 3

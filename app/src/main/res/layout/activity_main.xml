@@ -36,7 +36,8 @@
             android:src="@drawable/iconocatalogo"
             android:layout_alignParentBottom="true"
             android:layout_marginHorizontal="75dp"
-            android:layout_marginVertical="55dp"/>
+            android:layout_marginVertical="55dp"
+            android:contentDescription="@string/hola_amigo" />
         <TextView
             android:id="@+id/tvMenuCatalog"
             android:layout_width="wrap_content"
@@ -53,9 +54,10 @@
             android:layout_height="@dimen/hgButton"
             android:src="@drawable/iconopedido"
             android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:layout_marginHorizontal="75dp"
-            android:layout_marginVertical="55dp"/>
+            android:layout_marginVertical="55dp"
+            android:contentDescription="@string/hola_amigo" />
         <TextView
             android:id="@+id/tvMenuOrder"
             android:layout_width="wrap_content"
@@ -64,7 +66,7 @@
             android:textSize="@dimen/szNormal"
             android:textStyle="bold"
             android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:layout_marginHorizontal="80dp"
             android:layout_marginVertical="241dp"/>
 
@@ -75,7 +77,8 @@
             android:layout_alignParentBottom="true"
             android:layout_marginHorizontal="75dp"
             android:layout_marginVertical="190dp"
-            android:src="@drawable/iconovisor" />
+            android:src="@drawable/iconovisor"
+            android:contentDescription="@string/hola_amigo" />
         <TextView
             android:id="@+id/tvMenuViewer"
             android:layout_width="wrap_content"
@@ -92,9 +95,10 @@
             android:layout_height="@dimen/hgButton"
             android:src="@drawable/iconopago"
             android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:layout_marginHorizontal="75dp"
-            android:layout_marginVertical="190dp"/>
+            android:layout_marginVertical="190dp"
+            android:contentDescription="@string/hola_amigo" />
         <TextView
             android:id="@+id/tvMenuPay"
             android:layout_width="wrap_content"
@@ -103,7 +107,7 @@
             android:textSize="@dimen/szNormal"
             android:textStyle="bold"
             android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:layout_marginHorizontal="91dp"
             android:layout_marginVertical="165dp"/>
     </RelativeLayout>

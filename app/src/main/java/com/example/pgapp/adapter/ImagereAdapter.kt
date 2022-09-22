@@ -1,5 +1,6 @@
 package com.example.pgapp.adapter
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.ImageView
@@ -8,10 +9,10 @@ import androidx.viewpager2.widget.ViewPager2
 import com.example.pgapp.R
 import com.example.pgapp.databinding.ImageContainerBinding
 
-class imagereAdapter(val imageList: ArrayList<Int>, private val viewPager2: ViewPager2)
-    : RecyclerView.Adapter<imagereAdapter.ImageViewHolder> () {
-    inner class ImageViewHolder(val binding: ImageContainerBinding) : RecyclerView.ViewHolder(binding.root) {
-        val imageView : ImageView = itemView.findViewById(R.id.ivContainerCard);
+class ImagereAdapter(private val imageList: ArrayList<Int>, private val viewPager2: ViewPager2)
+    : RecyclerView.Adapter<ImagereAdapter.ImageViewHolder> () {
+    inner class ImageViewHolder(binding: ImageContainerBinding) : RecyclerView.ViewHolder(binding.root) {
+        val imageView : ImageView = itemView.findViewById(R.id.ivContainerCard)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ImageViewHolder {
@@ -30,6 +31,7 @@ class imagereAdapter(val imageList: ArrayList<Int>, private val viewPager2: View
         return imageList.size
     }
 
+    @SuppressLint("NotifyDataSetChanged")
     private val runnable = Runnable {
         imageList.addAll(imageList)
         notifyDataSetChanged()

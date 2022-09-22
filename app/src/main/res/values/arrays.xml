@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="productname"></string-array>
-    <integer-array name="imagename"></integer-array>
+    <string-array name="productname">
+        <item>@string/ik1_name</item>
+        <item>@string/ik2_name</item>
+        <item>@string/ik3_name</item>
+    </string-array>
+    <integer-array name="imagename">
+        <item>@drawable/beneficiosviovan</item>
+        <item>@drawable/beneficiosagroalpha</item>
+        <item>@drawable/beneficioskadabra</item>
+    </integer-array>
 </resources>
