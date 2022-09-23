@@ -21,17 +21,17 @@
         tools:ignore="UseCompoundDrawables">
         <ImageView
             android:id="@+id/ivCatalogImage"
-            android:layout_width="120dp"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/wdButton"
+            android:layout_height="@dimen/hgButton"
             android:src="@mipmap/ic_launcher"
-            android:layout_gravity="center"
+            android:layout_gravity="start"
             android:contentDescription="@string/hola_amigo" />
         <TextView
             android:id="@+id/tvCatalogName"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/nombre"
-            android:gravity="center_vertical"
+            android:gravity="center"
             android:textSize="30sp"
             android:textStyle="bold"
             android:lines="1"
